@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>firebase-mail-authentication</title>
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-auth.js"></script>
+    <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+          apiKey: "AIzaSyDDxlm2UMUkspBADvTtVu2i8fuGONyPB2Y",
+          authDomain: "email-auth-a78f1.firebaseapp.com",
+          databaseURL: "https://email-auth-a78f1.firebaseio.com",
+          projectId: "email-auth-a78f1",
+          storageBucket: "email-auth-a78f1.appspot.com",
+          messagingSenderId: "1062714868588",
+          appId: "1:1062714868588:web:5cdc7afce5833e98392949",
+          measurementId: "G-C6YP2GHS0S"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+      </script>
+</head>
+
+<body>
+
+    <h1>Firebase Email Authentication</h1>
+    <h3>First User Should Authenticate and signup</h3>
+
+    <div>
+       
+            <input type="email" id="email">
+            <br>
+            <input type="password" id="password">
+            <br>
+            <button onclick="signUp()">Sign Up User</button>
+       
+    </div>
+    <h3>now the users that have sign up will sign in only</h3>
+    <div>
+      
+            <input type="email" id="email-sign">
+            <br>
+            <input type="password" id="password-sign">
+            <br>
+            <button onclick="signIn()">Sign In User</button>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
